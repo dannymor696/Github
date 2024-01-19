@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html> 
+    <body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<h1>
+<marquee>welcome to our free online courses let you join us by registering your information below 
+</marquee>
+
+</h1>
+
+<body>
+    <header>
+        <h1>User Registration Form</h1>
+    </header>
+    <main>
+        <form id="registrationForm" method="post">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <p class="error" id="fullNameError"></p>
+            </div>
+            <div class="form-group">
+                <label for="bdate">birthday:</label>
+                <input type="date" id="bdate" name="bdate" required>
+            </div>
+            <div class="form-group">
+                <label for="registrationNumber">Registration Number:</label>
+                <input type="text" id="registrationNumber" name="registrationNumber" required>
+                <p class="error" id="registrationNumberError"></p>
+            </div>
+            <div class="form-group">
+                <label for="sex">Sex:</label>
+                <select id="sex" name="sex">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <p class="error" id="emailError"></p>
+            </div>
+            <div class="form-group">
+                <label for="region">Region:</label>
+                <select id="region" name="region">
+                    <option value="">Select Region</option>
+                    <!-- AJAX will dynamically load options for regions -->
+                    <script src="script.js"></script>
+                </select>
+                    <div class="form-group">
+                        <label for="district">District:</label>
+                        <select id="district" name="district">
+                            <option value="">Select District</option>
+                            <!-- AJAX will dynamically update available districts based on chosen region -->
+                        </select>
+                    </div>
+                  </body>
+
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <p class="error" id="passwordError"></p>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <p class="error" id="confirmPasswordError"></p>
+            </div>
+            <ul class="list">
+				<li class="list__item">
+				  <label class="label--checkbox">
+					<input type="checkbox" class="checkbox" onchange="document.getElementById(&#39;login&#39;).disabled = !this.checked;" required>
+					<span>i agree with conditions for  the courses and i will be responsible</span>
+				  </label>
+				</li>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+	 
+</div>
+<body>
+    <div id="box"></div>
+    <button id="btnAnimate">extend</button>
+    <br>
+    <button id="btnHide">less</button>
+    <br />
+    <br />
+
+    <button id="btnShow">wiew more</button>
+    <br>
+   
+   
+    <br>
+    <p>you are most welcome to our daily services</p>
+    <p>we are available 24 hours</p>
+    <div id="container"></div>
+    <div>
+        <p>subscribe to our channel for mor information</p>
+    </div>
+        <div id="checkbox"></div>
+        <div>
+
+
+    </div>
+  </body>
+
+
+   <marquee>
+    <div class="gallery">
+      <a target="_blank" href="fjords.jpg">
+        <img src="5terre.jpg" alt="Cinque Terre" width="300" height="200">
+      </a>
+      <div class="desc">in real life enjoyment</div>
+    </div>
+     
+    <div class="gallery">
+      <a target="_blank" href="forest.jpg">
+        <img src="forest.jpg" alt="Forest" width="300" height="200">
+      </a>
+      <div class="desc">amaizing environment</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="lights.jpg">
+        <img src="lights.jpg" alt="Northern Lights" width="300" height="200">
+      </a>
+      <div class="desc">hidden beautiful</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="mountains.jpg">
+        <img src="mountains.jpg" alt="Mountains" width="300" height="200">
+      </a>
+      <div class="desc">adventist</div>
+    </div>
+   </marquee>
+
+
+
+</html>
+    

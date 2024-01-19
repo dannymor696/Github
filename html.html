@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>User Registration Form</h1>
+
+  <form id="registrationForm" action="#" method="post">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="registrationNumber">Registration Number:</label>
+    <input type="text" id="registrationNumber" name="registrationNumber" required>
+
+    <label for="sex">Sex:</label>
+    <select id="sex" name="sex" required>
+      <option value=""></option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="region">Region:</label>
+    <select id="region" name="region" required>
+      <option value=""></option>
+    </select>
+
+    <label for="district">District:</label>
+    <select id="district" name="district" required>
+      <option value=""></option>
+    </select>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                background-color: rgba(26, 24, 24, 0.562);
+            }
+            td, th {
+                padding: 15px;
+            }
+            label{
+                height: 50px;
+                width: 100px;
+               
+            }
+        </style>
+        <body>
+            <table border="10px" bordercolor="black">
+                <tr>
+                    <td>
+                        <label for="fname">registration number</label>
+                    </td>
+                    <td>
+                        <input type="text" id="regno" name="regno" placeholder="regno">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fullname">full name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="fullname" name="fullname" placeholder="full name">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="gender" name="gender" checked>male:
+                        <input type="radio" id="gender" name="gender" checked>female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city/town">city/town:</label>  
+                    </td>
+                    <td>
+                        <select id="city/town" name="city/town">
+                            <option value="Arusha">Arusha</option>
+                            <option value="Morogoro">morogoro</option>
+                            <option value="Dodoma">Dodoma</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <style>
+                        label{
+                            align-items: center;
+                        }
+                        </style>
+<button>register</button>
+<button>clear</button>
+            
+                    </td>
+                </tr>
+            </table>
+        </body>
+    </head>
+</html>

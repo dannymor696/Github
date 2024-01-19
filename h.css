@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+  scroll-margin-top: center;
+    background-color: hsl(0, 0%, 20%);
+   image-orientation: 0deg;
+   background: url(3.jpg) no-repeat;
+   background-size: cover;
+   margin:0;padding:0;
+   color:var(--secondary);
+ word-break:break-word;
+}
